@@ -1,0 +1,111 @@
+\documentclass[12pt]{report}
+
+\usepackage{graphicx, probsoln}
+
+\pagestyle{myheadings}
+\newsavebox{\mybox}
+\newcounter{probnum}
+\renewenvironment{solution}{\par\noindent\begin{lrbox}{\mybox}}{\end{lrbox}\fbox{\usebox{\mybox}}}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\voffset}{-.75in}
+\setlength{\textheight}{9in}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% MAKE CHANGES BELOW %
+%%%%%%%%%%%%%%%%%%%%%%
+\markright{MAT 100/102 Fall 2014\hfill Final Exam version A\hfill Page }
+\newcommand{\pts}{[4 points] }
+\newcommand{\spc}{\vfill }
+% Pick a new seed for each new exam. Must be a positive integer!
+% Seeds used:
+% Fall 2014: 100, 200, 300
+\PSNrandseed{100}
+
+\begin{document}
+
+\noindent {Name and section:\enspace\hrulefill}
+
+\vspace{.25in}
+
+\noindent {Instructor's name:\enspace\hrulefill}
+
+\vspace{.25in}
+
+\begin{center}\fbox{\fbox{\parbox{5.5in}{
+  \begin{itemize}
+    \item \textbf{Please do not open exam until instructed to begin.}
+    \item This exam is to be completed in the allotted time period of $2$ hours.
+    \item There are $24$ problems which appear on the fronts and backs of the pages of this exam. 
+    \item You may earn a total of $100$ points. 
+    \item Read each question carefully.
+    \item Credit may not be given without sufficient supporting work. 
+    \item Simplify answers when possible. 
+    \item The use of cell phones, books, or notes are not permitted while taking this exam. 
+    \item Calculators are allowed.
+  \end{itemize} }}}
+\end{center}
+
+\loadrandomproblems{1}{Bank100Final01}
+\loadrandomproblems{1}{Bank100Final02}
+\loadrandomproblems{1}{Bank100Final03}
+\loadrandomproblems{1}{Bank100Final04}
+\loadrandomproblems{1}{Bank100Final05}
+\loadrandomproblems{1}{Bank100Final06}
+\loadrandomproblems{1}{Bank100Final07}
+\loadrandomproblems{1}{Bank100Final08}
+\loadrandomproblems{1}{Bank100Final09}
+\loadrandomproblems{1}{Bank100Final10}
+\loadrandomproblems{1}{Bank100Final11}
+\loadrandomproblems{1}{Bank100Final12}
+\loadrandomproblems{1}{Bank100Final13}
+\loadrandomproblems{1}{Bank100Final14}
+\loadrandomproblems{1}{Bank100Final15}
+\loadrandomproblems{1}{Bank100Final16}
+\loadrandomproblems{1}{Bank100Final17}
+\loadrandomproblems{1}{Bank100Final18}
+\loadrandomproblems{1}{Bank100Final19}
+\loadrandomproblems{1}{Bank100Final20}
+\loadrandomproblems{1}{Bank100Final21}
+\loadrandomproblems{1}{Bank100Final22}
+\loadrandomproblems{1}{Bank100Final23}
+\loadrandomproblems{1}{Bank100Final24}
+
+\newpage
+\begin{enumerate}
+  \foreachproblem{
+    \stepcounter{probnum}
+    \ifnum \value{probnum}=4
+	  \item\pts\thisproblem\spc\newpage 	% go to next page after problem 4
+    \else \ifnum \value{probnum}=8
+	  \item\pts\thisproblem\spc\newpage 	% go to next page after problem 8
+    \else \ifnum \value{probnum}=12
+	  \item\pts\thisproblem\spc\newpage 	% go to next page after problem 12
+    \else \ifnum \value{probnum}=16
+	  \item\pts\thisproblem\spc\newpage 	% go to next page after problem 16
+    \else \ifnum \value{probnum}=18
+	  \item {[8 points] }\thisproblem 	% make problem 18 worth 8 points and leave no extra space after it
+    \else \ifnum \value{probnum}=19
+	  \item\pts\thisproblem\spc\newpage 	% go to next page after problem 19
+    \else \ifnum \value{probnum}=21
+	    \item\pts\thisproblem 		% leave no extra space after problem 21
+    \else \ifnum \value{probnum}=22
+	    \item\pts\thisproblem 		% leave no extra space after problem 22
+    \else \ifnum \value{probnum}=23
+	    \item\pts\thisproblem\spc\newpage	% go to next page after problem 23
+    \else
+	  \item\pts\thisproblem\spc 		% default
+    \fi\fi\fi\fi\fi\fi\fi\fi\fi
+  }
+\end{enumerate}
+
+\newpage
+\showanswers
+\begin{center}\textbf{\Large{Solutions}}\end{center}
+\begin{enumerate}
+  \foreachsolution{\item\thisproblem}
+\end{enumerate}
+
+\end{document}

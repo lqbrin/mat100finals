@@ -1,0 +1,52 @@
+\documentclass[12pt]{report}
+
+\usepackage{graphicx, probsoln}
+
+\pagestyle{myheadings}
+\newsavebox{\mybox}
+\renewenvironment{solution}{\par\noindent\begin{lrbox}{\mybox}}{\end{lrbox}\fbox{\usebox{\mybox}}}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\voffset}{-.75in}
+\setlength{\textheight}{9in}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% MAKE CHANGES BELOW %
+%%%%%%%%%%%%%%%%%%%%%%
+\markright{MAT 100\hfill Final Exam Question Bank\hfill Page }
+
+\begin{document}
+
+\loadallproblems{Bank100Final01}
+\loadallproblems{Bank100Final02}
+\loadallproblems{Bank100Final03}
+\loadallproblems{Bank100Final04}
+\loadallproblems{Bank100Final05}
+\loadallproblems{Bank100Final06}
+\loadallproblems{Bank100Final07}
+\loadallproblems{Bank100Final08}
+\loadallproblems{Bank100Final09}
+\loadallproblems{Bank100Final10}
+\loadallproblems{Bank100Final11}
+\loadallproblems{Bank100Final12}
+\loadallproblems{Bank100Final13}
+\loadallproblems{Bank100Final14}
+\loadallproblems{Bank100Final15}
+\loadallproblems{Bank100Final16}
+\loadallproblems{Bank100Final17}
+\loadallproblems{Bank100Final18}
+\loadallproblems{Bank100Final19}
+\loadallproblems{Bank100Final20}
+\loadallproblems{Bank100Final21}
+\loadallproblems{Bank100Final22}
+\loadallproblems{Bank100Final23}
+\loadallproblems{Bank100Final24}
+
+\showanswers
+\begin{enumerate}
+  \foreachproblem{\item[\thisproblemlabel.]\thisproblem}
+\end{enumerate}
+
+\end{document}
