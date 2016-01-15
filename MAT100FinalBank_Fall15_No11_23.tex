@@ -1,0 +1,32 @@
+\documentclass[12pt]{report}
+
+\usepackage{graphicx, probsoln}
+
+\pagestyle{myheadings}
+\newsavebox{\mybox}
+\renewenvironment{solution}{\par\noindent\begin{lrbox}{\mybox}}{\end{lrbox}\fbox{\usebox{\mybox}}}
+\newcommand{\spc}{\vspace{1.5in}}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\voffset}{-.75in}
+\setlength{\textheight}{9in}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% MAKE CHANGES BELOW %
+%%%%%%%%%%%%%%%%%%%%%%
+\markright{MAT 100\hfill Final Exam Question Bank\hfill Page }
+
+\begin{document}
+
+
+\loadallproblems{Bank100Final18.5}
+
+
+\showanswers
+\begin{enumerate}
+  \foreachproblem{\item[\thisproblemlabel.]\thisproblem}
+\end{enumerate}
+
+\end{document}

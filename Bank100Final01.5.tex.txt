@@ -1,0 +1,51 @@
+\newproblem{01.5a}
+{
+	Factor $w^2-8w+7$.
+}
+{
+	\begin{tabular}{l r}
+	$w^2-7w-w+7$ & 2 pts to here\\
+	$w(w-7)-(w-7)$ & 3 pts to here\\
+	$(w-7)(w-1)$ & 4 pts to here
+	\end{tabular}
+}
+
+\newproblem{01.5b}
+{
+	Factor $w^2-5w+6$.
+}
+{
+	\begin{tabular}{l r}
+	$w^2-2w-3w+6$ & 2 pts to here\\
+	$w(w-2)-3(w-2)$ & 3 pts to here\\
+	$(w-2)(w-3)$ & 4 pts to here
+	\end{tabular}
+}
+
+
+\newproblem{01.5c}
+{
+	Factor $w^2-7x+10$.
+}
+{
+	\begin{tabular}{l r}
+	$w^2-2w-5w+10$ & 2 pts to here\\
+	$w(w-2)-5(w-2)$ & 3 pts to here\\
+	$(w-2)(w-5)$ & 4 pts to here
+	\end{tabular}
+}
+
+
+\newproblem{01.5d}
+{
+	Factor $w^2-7x+12$.
+}
+{
+	\begin{tabular}{l r}
+	$w^2-3w-4w+12$ & 2 pts to here\\
+	$w(w-3)-4(w-3)$ & 3 pts to here\\
+	$(w-3)(w-4)$ & 4 pts to here
+	\end{tabular}
+}
+
+
